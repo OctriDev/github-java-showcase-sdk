@@ -546,7 +546,7 @@ public class OrgsPart3 extends OrgsPart2 {
         String customPropertyName = request.getCustomPropertyName();
         CustomPropertyValueTypeEnum valueType = request.getValueType();
         Boolean required = request.getRequired();
-        SdkClient.OptionalValue<Object> defaultValue = request.getDefaultValue();
+        SdkClient.OptionalValue<List<String>> defaultValue = request.getDefaultValue();
         SdkClient.OptionalValue<String> description = request.getDescription();
         SdkClient.OptionalValue<List<String>> allowedValues = request.getAllowedValues();
         SdkClient.OptionalValue<CustomPropertyValuesEditableByEnum> valuesEditableBy = request.getValuesEditableBy();
