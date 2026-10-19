@@ -3534,7 +3534,7 @@ public class Orgs extends OrgsPart4 {
         private String customPropertyName;
         private CustomPropertyValueTypeEnum valueType;
         private Boolean required;
-        private SdkClient.OptionalValue<Object> defaultValue;
+        private SdkClient.OptionalValue<List<String>> defaultValue;
         private SdkClient.OptionalValue<String> description;
         private SdkClient.OptionalValue<List<String>> allowedValues;
         private SdkClient.OptionalValue<CustomPropertyValuesEditableByEnum> valuesEditableBy;
@@ -3550,7 +3550,7 @@ public class Orgs extends OrgsPart4 {
             public Builder customPropertyName(String val) { request.customPropertyName = val; return this; }
             public Builder valueType(CustomPropertyValueTypeEnum val) { request.valueType = val; return this; }
             public Builder required(Boolean val) { request.required = val; return this; }
-            public Builder defaultValue(SdkClient.OptionalValue<Object> val) { request.defaultValue = val; return this; }
+            public Builder defaultValue(SdkClient.OptionalValue<List<String>> val) { request.defaultValue = val; return this; }
             public Builder description(SdkClient.OptionalValue<String> val) { request.description = val; return this; }
             public Builder allowedValues(SdkClient.OptionalValue<List<String>> val) { request.allowedValues = val; return this; }
             public Builder valuesEditableBy(SdkClient.OptionalValue<CustomPropertyValuesEditableByEnum> val) { request.valuesEditableBy = val; return this; }
@@ -3561,7 +3561,7 @@ public class Orgs extends OrgsPart4 {
         public String getCustomPropertyName() { return customPropertyName; }
         public CustomPropertyValueTypeEnum getValueType() { return valueType; }
         public Boolean getRequired() { return required; }
-        public SdkClient.OptionalValue<Object> getDefaultValue() { return defaultValue; }
+        public SdkClient.OptionalValue<List<String>> getDefaultValue() { return defaultValue; }
         public SdkClient.OptionalValue<String> getDescription() { return description; }
         public SdkClient.OptionalValue<List<String>> getAllowedValues() { return allowedValues; }
         public SdkClient.OptionalValue<CustomPropertyValuesEditableByEnum> getValuesEditableBy() { return valuesEditableBy; }

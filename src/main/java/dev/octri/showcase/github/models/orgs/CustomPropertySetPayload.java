@@ -25,7 +25,7 @@ public final class CustomPropertySetPayload {
     /**
      * Default value of the property
      */
-    @Nullable @JsonProperty("default_value") public Object defaultValue;
+    @Nullable @JsonProperty("default_value") public List<String> defaultValue;
     /**
      * Short description of the property
      */
@@ -47,14 +47,14 @@ public final class CustomPropertySetPayload {
     public static final class Builder {
         private CustomPropertySetPayloadValueTypeEnum valueType;
         private Boolean required;
-        private Object defaultValue;
+        private List<String> defaultValue;
         private String description;
         private List<String> allowedValues;
         private CustomPropertySetPayloadValuesEditableByEnum valuesEditableBy;
         private Boolean requireExplicitValues;
         public Builder valueType(CustomPropertySetPayloadValueTypeEnum value) { this.valueType = value; return this; }
         public Builder required(Boolean value) { this.required = value; return this; }
-        public Builder defaultValue(Object value) { this.defaultValue = value; return this; }
+        public Builder defaultValue(List<String> value) { this.defaultValue = value; return this; }
         public Builder description(String value) { this.description = value; return this; }
         public Builder allowedValues(List<String> value) { this.allowedValues = value; return this; }
         public Builder valuesEditableBy(CustomPropertySetPayloadValuesEditableByEnum value) { this.valuesEditableBy = value; return this; }
