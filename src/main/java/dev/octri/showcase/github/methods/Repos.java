@@ -45,7 +45,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Repos extends ReposPart6 {
+public class Repos extends ReposUserOperations {
 
     /**
      * ReposUpdateSecurityAndAnalysisAdvancedSecurity.

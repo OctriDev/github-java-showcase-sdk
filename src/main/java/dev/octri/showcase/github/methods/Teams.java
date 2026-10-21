@@ -9,7 +9,7 @@ import dev.octri.showcase.github.models.teams.TeamMemberRoleEnum;
 import dev.octri.showcase.github.SdkClient;
 import java.util.List;
 
-public class Teams extends TeamsPart2 {
+public class Teams extends TeamsReposOperations {
 
     public static final class TeamsListTeamType {
         public static final TeamsListTeamType ALL = new TeamsListTeamType("all");

@@ -30,7 +30,7 @@ import java.time.OffsetDateTime;
 import java.util.List;
 import javax.annotation.Nullable;
 
-public class Issues extends IssuesPart2 {
+public class Issues extends IssuesTimelineOperations {
 
 
     public static class IssuesCreateIssueFieldValuesItem {

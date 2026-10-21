@@ -44,7 +44,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Actions extends ActionsPart6 {
+public class Actions extends ActionsReposOperations {
 
 
     public static class ActionsGetActionsCacheUsageByRepoForOrgResponse {

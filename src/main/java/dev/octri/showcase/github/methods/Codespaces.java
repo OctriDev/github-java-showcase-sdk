@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Codespaces extends CodespacesPart2 {
+public class Codespaces extends CodespacesStartOperations {
 
 
     public static class CodespacesListInOrganizationResponse {
