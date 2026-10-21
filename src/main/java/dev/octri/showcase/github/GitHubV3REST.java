@@ -6621,15 +6621,15 @@ public class GitHubV3REST {
         /**
          * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).
          */
-        public List<String> getAllTemplates() {
-            return Gitignore.gitignoreGetAllTemplates(this.clientConfig);
+        public List<String> listTemplates() {
+            return Gitignore.listTemplates(this.clientConfig);
         }
 
         /**
          * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).
          */
-        public List<String> getAllTemplates(SdkConfig.RequestOptions options) {
-            return Gitignore.gitignoreGetAllTemplates(this.clientConfig, options);
+        public List<String> listTemplates(SdkConfig.RequestOptions options) {
+            return Gitignore.listTemplates(this.clientConfig, options);
         }
 
         /**

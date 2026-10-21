@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Users extends UsersPart2 {
+public class Users extends UsersSshSigningKeysOperations {
 
     /**
      * UsersListAttestationsBulkResponsePageInfo.

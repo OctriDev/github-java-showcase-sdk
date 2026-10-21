@@ -14,16 +14,16 @@ public class Gitignore {
     /**
      * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).
      */
-    public static List<String> gitignoreGetAllTemplates(SdkConfig.ClientConfig clientConfig) {
-        return gitignoreGetAllTemplates(clientConfig, null);
+    public static List<String> listTemplates(SdkConfig.ClientConfig clientConfig) {
+        return listTemplates(clientConfig, null);
     }
 
     /**
      * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).
      */
-    public static List<String> gitignoreGetAllTemplates(SdkConfig.ClientConfig clientConfig, SdkConfig.RequestOptions options) {
+    public static List<String> listTemplates(SdkConfig.ClientConfig clientConfig, SdkConfig.RequestOptions options) {
 
-        return SdkClient.request(clientConfig, "GET", "/gitignore/templates", null, null, null, new TypeReference<List<String>>(){}, "gitignoreGetAllTemplates", null, SdkClient.ResponseDecoder.JSON, options).data;
+        return SdkClient.request(clientConfig, "GET", "/gitignore/templates", null, null, null, new TypeReference<List<String>>(){}, "listTemplates", null, SdkClient.ResponseDecoder.JSON, options).data;
     }
 
 

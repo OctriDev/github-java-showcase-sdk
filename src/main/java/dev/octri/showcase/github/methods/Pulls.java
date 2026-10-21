@@ -14,7 +14,7 @@ import java.time.OffsetDateTime;
 import java.util.List;
 import javax.annotation.Nullable;
 
-public class Pulls extends PullsPart2 {
+public class Pulls extends PullsReposOperations {
 
 
     public static class PullsCreateReviewCommentsItem {

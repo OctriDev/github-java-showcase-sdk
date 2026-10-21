@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Orgs extends OrgsPart4 {
+public class Orgs extends OrgsSettingsOperations {
 
 
     public static class OrgsCreateArtifactDeploymentRecordResponse {
